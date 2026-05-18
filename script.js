@@ -4,7 +4,7 @@ const recipes = [
     title: "村驴锅包肉",
     category: "东北菜",
     status: "已整理",
-    image: "https://i0.hdslb.com/bfs/archive/848e0f057cd9b1784bb6e6420cd0506da9001564.jpg",
+    image: "assets/guobaorou-cover.jpg",
     source: {
       label: "小红书分享链接；同标题公开页：Bilibili BV1xy411i7Mi",
       url: "https://www.bilibili.com/video/BV1xy411i7Mi/",
