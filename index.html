@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>回国下厨计划 | 食谱收藏</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Recipe notebook</p>
+        <h1>回国下厨计划</h1>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-button" type="button" id="printRecipe" aria-label="打印当前菜谱">
+          <i data-lucide="printer"></i>
+          <span>打印</span>
+        </button>
+        <button class="icon-button primary" type="button" id="copyShoppingList" aria-label="复制购物清单">
+          <i data-lucide="clipboard-list"></i>
+          <span>复制采购清单</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="library-shell" aria-label="食谱收藏">
+        <aside class="recipe-sidebar">
+          <div class="search-wrap">
+            <i data-lucide="search"></i>
+            <input id="recipeSearch" type="search" placeholder="搜索菜名、食材、口味" />
+          </div>
+          <div class="tabs" role="tablist" aria-label="分类">
+            <button class="tab is-active" type="button" data-filter="all">全部</button>
+            <button class="tab" type="button" data-filter="东北菜">东北菜</button>
+            <button class="tab" type="button" data-filter="待整理">待整理</button>
+          </div>
+          <div class="recipe-list" id="recipeList"></div>
+        </aside>
+
+        <article class="recipe-detail" id="recipeDetail"></article>
+      </section>
+    </main>
+
+    <template id="recipeCardTemplate">
+      <button class="recipe-card" type="button">
+        <img class="recipe-card-image" alt="" />
+        <span class="recipe-card-body">
+          <span class="recipe-card-meta"></span>
+          <strong class="recipe-card-title"></strong>
+          <span class="recipe-card-note"></span>
+        </span>
+      </button>
+    </template>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
